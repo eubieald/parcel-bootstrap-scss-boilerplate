@@ -1,0 +1,15 @@
+// _bootstrap-api-utilities.scss
+
+// Use $theme-colors-rgb
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      values: (
+        default: default,
+        pointer: pointer
+      )
+    ),
+  )
+);

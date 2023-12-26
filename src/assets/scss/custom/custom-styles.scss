@@ -1,0 +1,268 @@
+// Global styles
+body {
+    line-height: normal;
+}
+
+strong {
+    font-weight: var(--bs-font-weight-extrabold);
+}
+
+#play-your-favorite-songs {
+    h2 {
+        margin: 0;
+        padding: 0;
+
+        &>strong {
+            font-weight: var(--bs-font-weight-extrabold);
+            font-feature-settings: normal;
+            line-height: 1.2;
+        }
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .video-wrapper {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    a.border-pianote {
+        border-radius: 50px;
+        font-family: var(--font-family-secondary);
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: var(--link_line-height-base);
+
+        &.songs-list {
+            border: 1px solid white;
+            background-color: $primary-color;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+
+        &.start-free {
+            background-color: $secondary-color;
+
+            &:hover {
+                background-color: var(--link-hover-bg-color);
+            }
+
+            & .fa-arrow-right {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &:hover .fa-arrow-right {
+                transform: translateX(3px);
+            }
+        }
+    }
+
+    .text-light-navy {
+        color: var(--tertiary-color);
+    }
+}
+
+// Mobile
+@media (max-width: 639.98px) {
+    #play-your-favorite-songs {
+        h2>strong {
+            font-size: 24px;
+        }
+
+        .lead {
+            font-size: 15px;
+            line-height: 18.75px;
+        }
+
+        .video-wrapper {
+            max-width: 320px;
+        }
+
+        .video-wrapper video {
+            max-height: 174px;
+        }
+
+        .icon-text-container {
+            .grid-item-wrapper {
+                display: flex;
+                gap: 8px;
+            }
+
+            .icon-wrapper {
+                flex-shrink: 0;
+                width: 56px;
+            }
+
+            .icon-wrapper svg {
+                transform: scale(0.7); /* You can adjust the scale factor as needed */
+            }
+
+            .grid-item strong {
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            .text-title,
+            .text-desc {
+                text-align: left;
+            }
+
+            .text-desc {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        a.border-pianote {
+            width: 100%;
+            letter-spacing: 1.6px;
+
+            &.songs-list,
+            &.start-free {
+                padding: 8px 28px 6px;
+            }
+        }
+
+        .text-light-navy {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+// Tablet
+@include media-breakpoint-up(md) {
+    #play-your-favorite-songs {
+        h2>strong {
+            font-size: 24px;
+            line-height: 28.8px;
+        }
+
+        .lead {
+            font-size: 15px;
+            line-height: 18.75px;
+        }
+
+        .video-wrapper {
+            max-width: 576px;
+        }
+
+        .icon-text-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 896px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .icon-wrapper > svg {
+                width: 40px;
+                height: 40px;
+            }
+
+            .grid-item strong {
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            .text-title,
+            .text-desc {
+                text-align: center;
+            }
+
+            .text-desc {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        a.border-pianote {
+            width: 100%;
+
+            &.songs-list,
+            &.start-free {
+                box-sizing: border-box;
+                width: 256px;
+                padding: 8px 28px 6px;
+                letter-spacing: 1.6px;
+            }
+        }
+
+        .text-light-navy {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    #play-your-favorite-songs {
+        h2>strong {
+            font-size: 36px;
+            line-height: 43.2px;
+        }
+
+        .lead {
+            font-size: 16px;
+            font-weight: var(--bs-font-weight-light);
+            line-height: 20px;
+        }
+
+        .video-wrapper {
+            max-width: 896px;
+        }
+
+        .icon-text-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 8px;
+            max-width: 896px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .icon-wrapper > svg {
+                width: 40px;
+                height: 40px;
+            }
+
+            .grid-item strong {
+                font-size: 15px;
+                line-height: 24px;
+            }
+
+            .text-title,
+            .text-desc {
+                text-align: center;
+            }
+
+            .text-desc {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        a.border-pianote {
+            width: 100%;
+
+            &.songs-list,
+            &.start-free {
+                box-sizing: border-box;
+                width: 256px;
+                padding: 8px 28px 6px;
+                letter-spacing: 1.6px;
+            }
+        }
+
+        .text-light-navy {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

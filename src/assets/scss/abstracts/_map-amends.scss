@@ -1,0 +1,28 @@
+// Create your own map
+
+// Add custom colors
+$custom-colors: (
+    "primary": tomato,
+    "secondary": #f61a30,
+    "tertiary": #a1afc9,
+);
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Overriding spacers for margins and padding
+$custom-spacers: (
+    12: $spacer * 0.75,
+    20: $spacer * 1.25,
+    40: $spacer * 2.5,
+    32: $spacer * 2,
+    50: $spacer * 3.125,
+    56: $spacer * 3.5,
+    80: $spacer * 5
+);
+$spacers: map-merge($spacers, $custom-spacers);
+
+$custom-grid-breakpoints: (
+    md: 640px,
+    lg: 1024px
+);
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);

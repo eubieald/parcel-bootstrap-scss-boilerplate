@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/functions";
+
+@import "./abstracts/variables";
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+
+@import "./abstracts/map-amends";
+
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/helpers";
+
+@import "./utilities/bootstrap-api-utilities";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./abstracts/css-variables";
+@import "./custom/custom-styles";

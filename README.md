@@ -4,7 +4,7 @@
 
 
 This project is a trial task exam from one of the companies I applied.
-This is to clone a section of the www.pianote.com
+This is to clone a section of the www.pianote.com (play your favorite songs)
 
 
 # What I learned:
@@ -24,7 +24,7 @@ This is to clone a section of the www.pianote.com
 
 Optional if you want to run via development mode:
 4. rm -rf .cache dist
-5. run npm run dev (it should automatically open your default browser to you with the app project)
+5. run npm run dev (it should automatically open your default browser for you with the app project)
 
 
 
@@ -32,7 +32,6 @@ Optional if you want to run via development mode:
 
 ## How to tweak this project for your own use:
 I would recommend you to clone and rename this project so that you can use it for your own needs as it is an example project. This boilerplate is a nice place to start.
-
 
 ## Find a bug?
 Please use the issue tab above to report any problems you encountered or suggestions you have for improving this project. Please make mention to the issue you created if you would like to submit a pull request. I'm grateful.

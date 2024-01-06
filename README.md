@@ -4,7 +4,7 @@
 
 
 This project is a trial task exam from one of the companies I applied.
-This is to clone a section of the www.pianote.com (play your favorite songs)
+This is to clone a section of the www.pianote.com (play your favorite songs) and ensure that it's mobile and tablet responsive.
 
 
 # What I learned:

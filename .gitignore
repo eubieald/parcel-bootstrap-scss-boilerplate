@@ -1,0 +1,25 @@
+# Node.js
+node_modules/
+
+# Compiled output
+dist/
+out/
+
+# Cache and logs
+.cache/
+logs/
+
+# Parcel
+.parcel-cache/
+
+# macOS
+.DS_Store
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Operating System files
+Thumbs.db
+.DS_Store
+ehthumbs.db

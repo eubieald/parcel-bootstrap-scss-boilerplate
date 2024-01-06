@@ -5,8 +5,8 @@
   "source": "./src/index.html",
   "browserslist": "> 1%, last 2 versions",
   "scripts": {
-    "dev": "parcel ./src/index.html --open",
-    "build": "parcel build ./src/index.html --dist-dir dist --public-url ./"
+    "dev": "rm -rf dist .parcel-cache && parcel serve ./src/index.html --open",
+    "build": "rm -rf dist .parcel-cache && parcel build ./src/index.html --dist-dir dist --public-url ./ && open dist/index.html"
   },
   "keywords": [],
   "author": "",

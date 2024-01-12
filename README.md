@@ -18,12 +18,10 @@ This is to clone a section of the www.pianote.com (play your favorite songs) and
 1. Download the project to your local
 2. cd to project root directory
 3. run npm install
-4. run rm -rf .cache dist
 4. run npm run build (it should generate the dist folder)
 5. open dist/index.html with browser
 
 Optional if you want to run via development mode:
-4. rm -rf .cache dist
 5. run npm run dev (it should automatically open your default browser for you with the app project)
 
 
